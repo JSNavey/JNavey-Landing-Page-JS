@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text:wght@400;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+@import "import_css_files/variables.css";
+@import "import_css_files/global.css";
+@import "import_css_files/body-wrapper.css";
+
+/*** Trending Topics ***/
+/* Main Topic */
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.main-topic {
+    height: auto;
+    width: 60%;
+}
+
+.main-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* What's New */
+.whats-new {
+    display: flex;
+    flex-direction: column;
+    height: 45em;
+    width: 38%;
+    background-color: var(--background-color);
+    padding: 2em 2em 0 2em;
+}
+
+.whats-new-heading {
+    margin: 0 auto 1em auto;
+}
+
+.trending-list {
+    height: 8rem;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.trending-img {
+    margin-right: 1em;
+}
+
+.trending-credit {
+    font-size: 0.9rem;
+    color: var(--sub-header-font-color);
+    font-style: italic;
+    line-height: 80%;
+    margin-top: 0.3em;
+
+}
+
+/*** Cards ***/
+
+.card {
+    height: 35em;
+}
+
+.card:hover {
+    background-color: var(--hover-color);
+    box-shadow: 0 15px 18px var(--box-shadow-color);
+}
+
+.card-img {
+    height: auto;
+    max-width: 100%;
+}
+
+.card-title {
+    text-transform: uppercase;
+    color: var(--sub-header-font-color);
+}
+
+.card-description {
+    padding: 0 1.1em 0 1.1em;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-btn {
+    border: 2px solid var(--btn-color);
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+
+.home, 
+.food, 
+.gardening, 
+.kid,
+.recipe1,
+.recipe2,
+.recipe3,
+.recipe4 {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+/*** Footer Section ***/
+.footer {
+    display: flex;
+    height: 20em;
+    justify-content: space-around;
+    padding-bottom: 4em;
+    box-shadow: 0 -5px 5px -5px var(--box-shadow-color);
+    margin-top: 2em;
+}
+
+.social-media {
+    width: 48%;
+}
+
+.social-media-logo {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+}
+
+.subscription-form {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Media Query for Small Devices */
+@media screen and (max-width: 600px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-topic,
+    .whats-new {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .main-img-decription {
+        margin-bottom: 2.5em;
+        text-align: center;
+    }
+
+    .main-btn {
+        margin:auto;
+    }
+
+    .whats-new-heading{
+        padding-bottom: 1em;
+    }
+
+    .trending-img {
+        display: none;
+    }
+
+    .trending-list {
+        height: fit-content;
+    }
+}
+
+/* Media Query for Tablet Devices */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.1fr 1.5fr 0.1fr 0.5fr 0.5fr;
+        grid-template-areas:
+        "main-header main-header"
+        "main main"
+        "card-header card-header" 
+        "home food"
+        "gardening kid";
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .home {
+        grid-area: home;
+    }
+
+    .food {
+        grid-area: food;
+    }
+
+    .gardening {
+        grid-area: gardening;
+    }
+
+    .kid {
+        grid-area: kid;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-topic,
+    .whats-new {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .main-img-decription {
+        margin-bottom: 2.5em;
+    }
+}
