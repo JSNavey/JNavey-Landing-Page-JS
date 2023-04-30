@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text:wght@400;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 @import "import_css_files/variables.css";
 @import "import_css_files/global.css";
-@import "import_css_files/body-wrapper.css";
 
 
 /*** Wrapper Section ***/
 
+.wrapper {
+    width: 65%;
+    margin: auto;
+    display: grid;
+    margin: auto;
+    padding-top: 5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 0.1fr 0.5fr;
+    grid-gap: 2em;
+    grid-template-areas: 
+    "main main main main"
+    "card-header card-header card-header card-header"
+    "home food gardening kid";
+}
+
+/*
 .wrapper {
     width: 65%;
     margin: auto;
@@ -25,6 +40,7 @@
 .main-header {
     grid-area: main-header;
 }
+*/
 
 .card-header {
     grid-area: card-header;
