@@ -46,47 +46,31 @@ button {
     width: 100vw;
 }
 
-/*** Nav Bar ***/
+/*** Header ***/
 .header {
-    box-shadow: 0 8px 5px -5px var(--box-shadow-color); 
-    position: absolute;
-    top: 0;
-    left: 0;
+    min-height: 100vh;
     width: 100%;
-    height: 8em;
-    padding: 1em 17em;
-}
-
-
-.header,
-.footer {
-    background-color: var(--background-color);
+    background-image: linear-gradient(var(--background-img-linear),var(--background-img-linear)),
+    url(../images/search_homepage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 62em;
+    padding: 1em 16em;
 }
 
-.footer-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 65%;
-    margin: auto;
-    padding-top: 1.5rem;
-}
-
-.header-wrapper-name {
-    width: 33%;
-}
-
-.blog-name {
-    font-size: 2rem;
+.header-wrapper-name a {
+    color: var(--white);
+    text-shadow: 2px 2px 4px var(--black);
+    font-size: 1.25em;
     font-family: var(--heading-font-family);
     text-transform: uppercase;
-    letter-spacing: 0.35rem;
+    letter-spacing: 0.25em;
 }
 
 .navbar .nav-lists {
@@ -95,19 +79,39 @@ button {
     justify-content: space-between;
     align-items: center;
     font-family: var(--font-family);
-    text-transform: uppercase;
     font-weight: 600;
+    font-size: 1.15em;
 }
 
+.navbar .nav-lists a {
+    color: var(--white);
+    text-shadow: 1px 1px 2px var(--black);
+    letter-spacing: 0.05em;
+}
+
+.navbar .nav-lists li::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #FCE2DB;
+    display: block;
+    margin: auto;
+}
+
+.navbar .nav-lists li:hover::after{
+    width: 100%;
+}
+
+/*** Wrapper ***/
 .nav, 
 .card,
 .btn,
 .card-btn,
-.input-form {
+.input-form,
+.navbar .nav-lists li::after {
 transition: 0.5s;
 }
 
-.nav:hover,
 .article:hover {
     text-decoration: underline;
 }
@@ -127,6 +131,18 @@ transition: 0.5s;
 }
 
 /*** Footer ***/
+.footer {
+    background-color: var(--background-color);
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+    padding-top: 1.5rem;
+}
+
 .form-input {
     height: 3rem;
     width: 20rem;

@@ -4,23 +4,6 @@
 
 
 /*** Wrapper Section ***/
-
-.wrapper {
-    width: 65%;
-    margin: auto;
-    display: grid;
-    margin: auto;
-    padding-top: 5em;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 0.1fr 0.5fr;
-    grid-gap: 2em;
-    grid-template-areas: 
-    "main main main main"
-    "card-header card-header card-header card-header"
-    "home food gardening kid";
-}
-
-/*
 .wrapper {
     width: 65%;
     margin: auto;
@@ -40,7 +23,6 @@
 .main-header {
     grid-area: main-header;
 }
-*/
 
 .card-header {
     grid-area: card-header;
