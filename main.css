@@ -11,13 +11,15 @@
     margin: auto;
     padding-top: 5em;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0.1fr 0.5fr;
     grid-gap: 2em;
     grid-template-areas: 
     "main-header main-header main-header main-header"
     "main main main main"
     "card-header card-header card-header card-header"
-    "home food gardening kid";
+    "home food gardening kid"
+    "about-me-header about-me-header about-me-header about-me-header"
+    "about-me about-me about-me about-me";
 }
 
 .main-header {
@@ -26,6 +28,10 @@
 
 .card-header {
     grid-area: card-header;
+}
+
+.about-me-header {
+    grid-area: about-me-header;
 }
 
 .home {
@@ -44,12 +50,22 @@
     grid-area: kid;
 }
 
-.main-header,
-.card-header,
-.recipe-header {
-    margin:auto;
+.about-me {
+    grid-area: about-me;
 }
 
+.main-header,
+.card-header,
+.about-me-header {
+    margin:auto;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px var(--box-shadow-color);
+}
+
+.card-header,
+.about-me-header {
+    margin-top: 2em;
+}
 
 /*** Trending Topics ***/
 /* Main Topic */
@@ -142,15 +158,28 @@
 .home, 
 .food, 
 .gardening, 
-.kid,
-.recipe1,
-.recipe2,
-.recipe3,
-.recipe4 {
+.kid {
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
 }
+
+.about-me {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.about-me-story {
+    padding-right: 3em;
+}
+
+.about-me-img {
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    padding-top: 3em;
+}
+
 
 /*** Footer Section ***/
 .footer {
