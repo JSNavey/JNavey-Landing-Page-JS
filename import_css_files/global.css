@@ -93,13 +93,43 @@ button {
     content: "";
     width: 0;
     height: 3px;
-    background: #FCE2DB;
+    background: var(--hover-color);
     display: block;
     margin: auto;
 }
 
 .navbar .nav-lists li:hover::after{
     width: 100%;
+}
+
+/* Search Box */
+.search-box {
+    width: 50%;
+    height: 2em;
+    color: var(--white);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+}
+
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--white);
+    opacity: 0.3;
+    border: 1px solid var(--box-shadow-color);
+    border-radius: 15px;
+    font-size: 1.15em;
+    outline: none;
+}
+
+.fi-br-search {
+    position: absolute;
+    top: 60%;    
+    right: 25px;
+    font-size: 1.5em;
 }
 
 /*** Wrapper ***/
@@ -112,6 +142,11 @@ button {
 transition: 0.5s;
 }
 
+.trending-list .article {
+    font-family: var(--heading-font-family);
+    font-size: 1.15em;
+    font-weight: 600;
+}
 .article:hover {
     text-decoration: underline;
 }
@@ -128,6 +163,7 @@ transition: 0.5s;
 .card-btn:hover {
     background-color: var(--btn-color);
     color: var(--white);
+    text-shadow: 1px 1px 2px var(--black);
 }
 
 /*** Footer ***/
@@ -168,6 +204,10 @@ transition: 0.5s;
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .search-box {
+        width: 95%;
     }
 
     .footer-wrapper {
@@ -222,6 +262,10 @@ transition: 0.5s;
     
     .navbar {
         width: 100%;
+    }
+
+    .search-box {
+        width: 75%;
     }
     
 }
