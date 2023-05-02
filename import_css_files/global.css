@@ -119,7 +119,7 @@ textarea {
     width: 100%;
 }
 
-.fi-rr-rectangle-xmark {
+.fi-br-cros {
     display: none;
 }
 
@@ -243,7 +243,7 @@ transition: 0.5s;
         text-shadow: none;
     }
 
-    .fi-rr-rectangle-xmark {
+    .fi-br-cros {
         display: block;
         position: absolute;
         z-index: 2;
