@@ -323,7 +323,10 @@ transition: 0.5s;
     }
     
     .navbar {
-        width: 100%;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
@@ -334,10 +337,12 @@ transition: 0.5s;
     .about-me {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .about-me-img {
-        padding: 2em;
-        
+    .about-me-story {
+        text-align: center;
+        padding-top: 2em;
+        padding-left: 2em;
     }
 }
