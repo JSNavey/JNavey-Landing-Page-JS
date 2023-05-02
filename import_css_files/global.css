@@ -119,6 +119,10 @@ textarea {
     width: 100%;
 }
 
+.fi-rr-rectangle-xmark {
+    display: none;
+}
+
 /* Search Box */
 .search-box {
     width: 50%;
@@ -239,6 +243,13 @@ transition: 0.5s;
         text-shadow: none;
     }
 
+    .fi-rr-rectangle-xmark {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        font-size: 2em;
+    }
+
     .about-me {
         display: flex;
         flex-direction: column;
@@ -254,7 +265,7 @@ transition: 0.5s;
     .about-me-img {
         order: -1;
     }
-    
+
     .search-box {
         width: 95%;
     }
