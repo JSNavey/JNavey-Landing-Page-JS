@@ -113,7 +113,7 @@ textarea {
     background: var(--hover-color);
     display: block;
     margin: auto;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .navbar .nav-lists a:hover::after{
@@ -122,7 +122,6 @@ textarea {
 
 .navbar .nav-lists a.active::after{
     width: 100%;
-
 }
 
 .fi-br-menu-burger,
@@ -165,8 +164,7 @@ textarea {
 .card,
 .btn,
 .card-btn,
-.input-form,
-.navbar .nav-lists li::after {
+.input-form {
 transition: 0.5s;
 }
 
@@ -243,6 +241,7 @@ transition: 0.5s;
         padding: 15em 0;
         background-color: var(--hover-color);
         box-shadow: -10px 0px 5px -5px var(--box-shadow-color);
+        transition: 0.5s;
     }
 
     .navbar .nav-lists a {
@@ -250,17 +249,26 @@ transition: 0.5s;
         text-shadow: none;
     }
 
-    .fi-br-menu-burger {
-        display: block;
-        position: absolute;
-        font-size: 2em;
+    .navbar .nav-lists a::after {
+        background: var(--black);
     }
+
     .fi-br-cross {
         display: block;
         position: absolute;
         z-index: 2;
         font-size: 1.5em;
-        top: 1;
+        top: 1.5em;
+        right: 1.5em;
+    }
+
+    .fi-br-menu-burger {
+        display: block;
+        position: absolute;
+        font-size: 2.25em;
+        top: 1em;
+        right: 0.5em;
+        color: var(--white);
     }
 
     .about-me {
@@ -319,6 +327,7 @@ transition: 0.5s;
     }
 }
 
+/* Media Query for Tablet Devices */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
     .header {
         height: 10em;
