@@ -106,20 +106,27 @@ textarea {
     letter-spacing: 0.05em;
 }
 
-.navbar .nav-lists li::after {
+.navbar .nav-lists a::after {
     content: "";
     width: 0;
     height: 3px;
     background: var(--hover-color);
     display: block;
     margin: auto;
+    transition: 0.5s;
 }
 
-.navbar .nav-lists li:hover::after{
+.navbar .nav-lists a:hover::after{
     width: 100%;
 }
 
-.fi-br-cros {
+.navbar .nav-lists a.active::after{
+    width: 100%;
+
+}
+
+.fi-br-menu-burger,
+.fi-br-cross {
     display: none;
 }
 
@@ -243,11 +250,17 @@ transition: 0.5s;
         text-shadow: none;
     }
 
-    .fi-br-cros {
+    .fi-br-menu-burger {
+        display: block;
+        position: absolute;
+        font-size: 2em;
+    }
+    .fi-br-cross {
         display: block;
         position: absolute;
         z-index: 2;
-        font-size: 2em;
+        font-size: 1.5em;
+        top: 1;
     }
 
     .about-me {
@@ -267,7 +280,7 @@ transition: 0.5s;
     }
 
     .search-box {
-        width: 95%;
+        width: 90%;
     }
 
     .footer-wrapper {
