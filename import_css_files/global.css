@@ -5,7 +5,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 16px;   
 }
 
 a {
@@ -61,6 +61,7 @@ textarea {
 #container {
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 /*** Header ***/
@@ -229,6 +230,11 @@ transition: 0.5s;
         padding: 0;
     }
 
+    .search-box {
+        width: 90%;
+    }
+
+    /* Nav Bar */
     .navbar .nav-lists {
         position: absolute;
         width: 50%;
@@ -240,8 +246,12 @@ transition: 0.5s;
         flex-direction: column;
         padding: 15em 0;
         background-color: var(--hover-color);
-        box-shadow: -10px 0px 5px -5px var(--box-shadow-color);
         transition: 0.5s;
+        transform: translateX(100%);
+    }
+
+    .navbar .nav-lists.active {
+        transform: translateX(0);
     }
 
     .navbar .nav-lists a {
@@ -256,7 +266,6 @@ transition: 0.5s;
     .fi-br-cross {
         display: block;
         position: absolute;
-        z-index: 2;
         font-size: 1.5em;
         top: 1.5em;
         right: 1.5em;
@@ -271,6 +280,7 @@ transition: 0.5s;
         color: var(--white);
     }
 
+    /*About Me*/
     .about-me {
         display: flex;
         flex-direction: column;
@@ -287,10 +297,7 @@ transition: 0.5s;
         order: -1;
     }
 
-    .search-box {
-        width: 90%;
-    }
-
+    /* Footer */
     .footer-wrapper {
         width: 40em;
         padding-top: 0;
@@ -344,6 +351,11 @@ transition: 0.5s;
         width: auto;
     }
     
+    .search-box {
+        width: 75%;
+    }
+
+    /* Nav Bar */
     .navbar {
         width: 100vw;
         display: flex;
@@ -351,11 +363,7 @@ transition: 0.5s;
         justify-content: center;
     }
 
-
-    .search-box {
-        width: 75%;
-    }
-    
+    /* About Me */
     .about-me {
         display: flex;
         flex-direction: column;
