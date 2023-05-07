@@ -22,7 +22,7 @@ for (let item of navItems) {
     //console.log(item);
     const li = document.createElement("li");
     //li.innerHTML = item;
-    li.innerHTML += `<a class="nav" href="#">${item}</a>`;
+    li.innerHTML = `<a class="nav" href="#">${item}</a>`;
     navUl.appendChild(li);
 }
 
