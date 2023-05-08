@@ -14,7 +14,7 @@
     <div id="container">
 
         <!----- Header Section ----->
-        <div class="header"> 
+        <section class="header"> 
             <div class="header-wrapper">
                 <div class="header-wrapper-name">
                     <h1><a class="blog-name" href="index.html">Ja Navey</a></h1>
@@ -26,8 +26,8 @@
                         <i class="fi fi-br-cross"></i>
                         <li><a class="nav active" href="#">Home</a></li>
                         <li><a class="nav" href="#">Trending</a></li>
-                        <li><a class="nav" href="#">Latest Posts</a></li>
-                        <li><a class="nav" href="#">About Me</a></li>
+                        <li><a class="nav" href="#">Posts</a></li>
+                        <li><a class="nav" href="#">About</a></li>
                     </ul>
                     -->
                     
@@ -39,105 +39,113 @@
                 <input type="text" placeholder="Find some new trends and tips.">
                 <i class="fi fi-br-search"></i>
             </div>
-        </div>
+        </section>
         <!----- End of Header ----->
 
         <div class="wrapper">
-            <!-- Trending Topic Section -->
-            <h1 class="main-header">Trending</h1>
-            <div class="main">
-                <div class="main-topic">
-                    <img class ="main-img" src="images/chatGpt_homepage.jpg" alt="chatGPT on a computer screen">
-                    <div class="main-img-decription">
-                        <h2>How to use ChatGPT: What you need to know</h2>
-                        <p class="article">The new AI language model had been trending since its launch late last year.  Here's how you can get started on it and what you can use it for.</p>
-                        <p class="trending-credit">by Ja Navey</p>
-                        <a href="#"><button  class="btn main-btn">Learn More</button></a>
-                    </div>    
+            <!-- Trending Section -->
+            <section id="trending">
+                <h1 class="main-header">Trending</h1>
+                <div class="main">
+                    <div class="main-topic">
+                        <img class ="main-img" src="images/chatGpt_homepage.jpg" alt="chatGPT on a computer screen">
+                        <div class="main-img-decription">
+                            <h2>How to use ChatGPT: What you need to know</h2>
+                            <p class="article">The new AI language model had been trending since its launch late last year.  Here's how you can get started on it and what you can use it for.</p>
+                            <p class="trending-credit">by Ja Navey</p>
+                            <a href="#"><button  class="btn main-btn">Learn More</button></a>
+                        </div>    
+                    </div>
+                    <div class="whats-new">
+                        <h2 class="whats-new-heading">What's New</h2>
+                        <ul>
+                            <li class="trending-list">
+                                <img class="trending-img" src="images/sunscreen_for_kid.jpg" alt="a girl on the beach">
+                                <div class="trending-caption">
+                                    <a class="article" href="https://www.nbcnews.com/select/shopping/best-sunscreens-kids-according-dermatologists-ncna1019866" target="_blank" rel="noopener noreferrer">7 Best Sunscreens for Kids</a>   
+                                    <p class="trending-credit">by Mili Godio</p>      
+                                </div>
+                            </li>
+                            <li class="trending-list">
+                                <img class="trending-img"  src="images/steak.jpg" alt="steak">
+                                <div class="trending-caption">
+                                    <a class="article" href="https://www.cnn.com/2023/03/05/health/keto-low-carb-high-fat-diets-heart-disease/index.html" target="_blank" rel="noopener noreferrer">"Keto-Like" Diet May be Harmful</a>
+                                    <p class="trending-credit">by Carma Hassan</p>
+                                </div>
+                            </li>
+                            <li class="trending-list">
+                                <img class="trending-img"  src="images/blueroom.jpg" alt="a grey-blue wall living room">
+                                <div class="trending-caption">
+                                    <a class="article" href="https://www.marthastewart.com/8387357/best-blue-paint-colors" target="_blank" rel="noopener noreferrer">18 of the Best Blue Paint Colors for Any Room </a>
+                                    <p class="trending-credit">by Blythe Copeland</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="whats-new">
-                    <h2 class="whats-new-heading">What's New</h2>
-                    <ul>
-                        <li class="trending-list">
-                            <img class="trending-img" src="images/sunscreen_for_kid.jpg" alt="a girl on the beach">
-                            <div class="trending-caption">
-                                <a class="article" href="https://www.nbcnews.com/select/shopping/best-sunscreens-kids-according-dermatologists-ncna1019866" target="_blank" rel="noopener noreferrer">7 Best Sunscreens for Kids</a>   
-                                <p class="trending-credit">by Mili Godio</p>      
-                            </div>
-                        </li>
-                        <li class="trending-list">
-                            <img class="trending-img"  src="images/steak.jpg" alt="steak">
-                            <div class="trending-caption">
-                                <a class="article" href="https://www.cnn.com/2023/03/05/health/keto-low-carb-high-fat-diets-heart-disease/index.html" target="_blank" rel="noopener noreferrer">"Keto-Like" Diet May be Harmful</a>
-                                <p class="trending-credit">by Carma Hassan</p>
-                            </div>
-                        </li>
-                        <li class="trending-list">
-                            <img class="trending-img"  src="images/blueroom.jpg" alt="a grey-blue wall living room">
-                            <div class="trending-caption">
-                                <a class="article" href="https://www.marthastewart.com/8387357/best-blue-paint-colors" target="_blank" rel="noopener noreferrer">18 of the Best Blue Paint Colors for Any Room </a>
-                                <p class="trending-credit">by Blythe Copeland</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </section>
             <!-- End of Trending Topic -->
 
             <!-- Card Section -->
-            <!-- Lastest Posts -->
-            <h1 class="card-header">Lastest Posts</h1>
-            <!-- Home -->
-            <div class="card home">
-                <img class="card-img"src="images/tidy_room.jpg" alt="a cozy living room with a grey sofa">
-                <div class="card-description">
-                    <p class="card-title">Home Living</p>
-                    <h3 class="card-caption">11 Daily Habits to Keep My Home Clean and Tidy</h3>
-                    <button class="card-btn">Read More</button>
-                </div>
-            </div>
+            <!-- Posts -->
+            <section id="cards">
+                <h1 class="card-header">Posts</h1>
+                <!-- Home -->
+                <div class="card-items">
+                    <div class="card home">
+                        <img class="card-img"src="images/tidy_room.jpg" alt="a cozy living room with a grey sofa">
+                        <div class="card-description">
+                            <p class="card-title">Home Living</p>
+                            <h3 class="card-caption">11 Daily Habits to Keep My Home Clean and Tidy</h3>
+                            <button class="card-btn">Read More</button>
+                        </div>
+                    </div>
 
-            <!-- Food -->
-            <div class="card food">
-                <img class="card-img"src="images/healthy_jar.jpg" alt="salad in a mason jar">
-                <div class="card-description">
-                    <p class="card-title">Food</p>
-                    <h3>These Mix and Match Mason Jar Salad Recipes Make Healthy Lunches Easy!</h3>
-                    <button class="card-btn">Read More</button>
-                </div>
-            </div>
+                    <!-- Food -->
+                    <div class="card food">
+                        <img class="card-img"src="images/healthy_jar.jpg" alt="salad in a mason jar">
+                        <div class="card-description">
+                            <p class="card-title">Food</p>
+                            <h3>These Mix and Match Mason Jar Salad Recipes Make Healthy Lunches Easy!</h3>
+                            <button class="card-btn">Read More</button>
+                        </div>
+                    </div>
 
-            <!-- Gardening -->
-            <div class="card gardening">
-                <img class="card-img"src="images/indoor_plants.jpg" alt="several indoor plants">
-                <div class="card-description">
-                    <p class="card-title">Gardening</p>
-                    <h3>Take These Steps to Keep Your Indoor Plants Alive</h3>
-                    <button class="card-btn">Read More</button>
-                </div>
-            </div> 
+                    <!-- Gardening -->
+                    <div class="card gardening">
+                        <img class="card-img"src="images/indoor_plants.jpg" alt="several indoor plants">
+                        <div class="card-description">
+                            <p class="card-title">Gardening</p>
+                            <h3>Take These Steps to Keep Your Indoor Plants Alive</h3>
+                            <button class="card-btn">Read More</button>
+                        </div>
+                    </div> 
 
-            <!-- Kid -->
-            <div class="card kid">
-                <img class="card-img"src="images/kid_activity.jpg" alt="a little hand with colorful drawing paint">
-                <div class="card-description">
-                    <p class="card-title">Kids</p>
-                    <h3>Fun and Creative Spring Activities for Toddlers</h3>
-                    <button class="card-btn">Read More</button>
+                    <!-- Kid -->
+                    <div class="card kid">
+                        <img class="card-img"src="images/kid_activity.jpg" alt="a little hand with colorful drawing paint">
+                        <div class="card-description">
+                            <p class="card-title">Kids</p>
+                            <h3>Fun and Creative Spring Activities for Toddlers</h3>
+                            <button class="card-btn">Read More</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
             <!-- End of Card Section -->
 
-            <!-- About Me Section -->
-            <h1 class="about-me-header">About Me</h1>
-            <div class="about-me">
-                <div class="about-me-story">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis odio eros. Etiam posuere nulla arcu, quis accumsan est tristique sed. In et ex ex. Curabitur euismod congue enim quis rhoncus. Donec viverra, ipsum eu elementum consectetur, justo ligula maximus nunc, eget hendrerit libero enim vel nisi. Curabitur vel convallis nisi..</p>
-                    <p>Donec eget ornare orci. Suspendisse ultricies aliquet est ut facilisis. Aliquam tincidunt magna sit amet eros posuere, in dignissim dui vehicula. Donec laoreet magna lacus, vitae mattis sapien accumsan non. Nam dolor leo, aliquet eget eleifend eget, dapibus et diam. Mauris eget leo egestas, pulvinar nisi vel, pulvinar orci.</p>
-                    <p>Suspendisse convallis lacus at massa vestibulum, dictum malesuada urna posuere. Aliquam erat volutpat. Donec suscipit erat orci, ac varius dolor faucibus eu. Mauris eu luctus ipsum, ut mollis magna. Nulla at venenatis mauris. Nullam ac augue commodo, sollicitudin leo sed, bibendum sapien. Morbi aliquet dapibus justo quis commodo. Morbi neque mi, tempus nec egestas sit amet, convallis eget urna.</p>
+            <!-- About Section -->
+            <section id ="about">
+                <h1 class="about-me-header">About</h1>
+                <div class="about-me">
+                    <div class="about-me-story">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis odio eros. Etiam posuere nulla arcu, quis accumsan est tristique sed. In et ex ex. Curabitur euismod congue enim quis rhoncus. Donec viverra, ipsum eu elementum consectetur, justo ligula maximus nunc, eget hendrerit libero enim vel nisi. Curabitur vel convallis nisi..</p>
+                        <p>Donec eget ornare orci. Suspendisse ultricies aliquet est ut facilisis. Aliquam tincidunt magna sit amet eros posuere, in dignissim dui vehicula. Donec laoreet magna lacus, vitae mattis sapien accumsan non. Nam dolor leo, aliquet eget eleifend eget, dapibus et diam. Mauris eget leo egestas, pulvinar nisi vel, pulvinar orci.</p>
+                        <p>Suspendisse convallis lacus at massa vestibulum, dictum malesuada urna posuere. Aliquam erat volutpat. Donec suscipit erat orci, ac varius dolor faucibus eu. Mauris eu luctus ipsum, ut mollis magna. Nulla at venenatis mauris. Nullam ac augue commodo, sollicitudin leo sed, bibendum sapien. Morbi aliquet dapibus justo quis commodo. Morbi neque mi, tempus nec egestas sit amet, convallis eget urna.</p>
+                    </div>
+                    <img src="images/about-me.jpg" alt="a woman working on a laptop at a coffee shop" class="about-me-img">
                 </div>
-                <img src="images/about-me.jpg" alt="a woman working on a laptop at a coffee shop" class="about-me-img">
-            </div>
+            </section>
 
             <!-- End of About Me Section -->
         </div>

@@ -9,7 +9,7 @@ Create navigation lists dynamically
     - Add "li" to "ul" by using appendChild();
 */
 
-let navItems = ["Home", "Trending", "Lastest Posts", "About Me"]; 
+let navItems = ["Home", "Trending", "Posts", "About"]; 
 const navUl = document.getElementsByTagName("ul")[0]; 
 //console.log(ul);
 navUl.setAttribute("class", "nav-lists");

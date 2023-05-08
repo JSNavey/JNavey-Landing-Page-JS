@@ -85,10 +85,10 @@ textarea {
 .header-wrapper-name a {
     color: var(--white);
     text-shadow: 2px 2px 4px var(--black);
-    font-size: 1.25em;
+    font-size: 1.75em;
     font-family: var(--heading-font-family);
     text-transform: uppercase;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.15em;
 }
 
 .navbar .nav-lists {
@@ -345,12 +345,13 @@ transition: 0.5s;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-top: 7em;
     }
 
-    .header-wrapper-name {
-        width: auto;
+    .header-wrapper-name h1 a {
+        font-size: 2.2em;
     }
-    
+
     .search-box {
         width: 75%;
     }
@@ -363,16 +364,7 @@ transition: 0.5s;
         justify-content: center;
     }
 
-    /* About Me */
-    .about-me {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-me-story {
-        text-align: center;
-        padding-top: 2em;
-        padding-left: 2em;
+    .nav-lists li a {
+        font-size: 1.75em;
     }
 }

@@ -4,7 +4,9 @@
 
 
 /*** Wrapper Section ***/
+/*
 .wrapper {
+    border: 1px solid red;
     width: 75%;
     margin: auto;
     display: grid;
@@ -53,22 +55,55 @@
 .about-me {
     grid-area: about-me;
 }
+*/
+
+.wrapper {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    margin: 0 auto;
+    grid-template-rows: 1fr 0.5fr 0.75fr;
+    grid-template-areas: 
+    "trending"
+    "cards"
+    "about";
+}
+
+#trending,
+#cards,
+#about {
+    margin-top: 2em;;
+}
 
 .main-header,
 .card-header,
 .about-me-header {
-    margin:auto;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px var(--box-shadow-color);
+    text-align: center;
+    font-size: 2em;
+    width: 15em;
+    border: 5px var(--sub-header-font-color);
+    border-style: double;
+    padding: 5px;
+    margin: 1em auto;
 }
 
-.card-header,
-.about-me-header {
-    margin-top: 2em;
-}
 
 /*** Trending Topics ***/
 /* Main Topic */
+#trending {
+    grid-area: trending;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: 
+    "main-header main-header"
+    "main main"
+}
+
+.main-header {
+    grid-area: main-header;
+}
+
 .main {
     grid-area: main;
     display: flex;
@@ -86,6 +121,13 @@
     height: auto;
 }
 
+.main-btn {
+    background-color: var(--background-color);
+    border: none;
+    margin-top: 1em;
+    width: 10em;
+}
+
 /* What's New */
 .whats-new {
     display: flex;
@@ -93,7 +135,7 @@
     height: 45em;
     width: 38%;
     background-color: var(--background-color);
-    padding: 2em 2em 0 2em;
+    padding: 1em 2em;
 }
 
 .whats-new-heading {
@@ -120,9 +162,27 @@
 }
 
 /*** Cards ***/
+#cards {
+    grid-area: cards;
+    grid-template-rows: 0.1fr 0.5fr;
+    grid-template-areas: 
+    "card-header"
+    "card-items"
+}
+
+.card-header {
+    grid-area: card-header;
+}
+
+.card-items {
+    display: flex;
+    justify-content: space-between;
+}
 
 .card {
     height: 35em;
+    width: 23%;
+    background-color: var(--background-color);
 }
 
 .card:hover {
@@ -155,28 +215,28 @@
     padding: 0.5rem 0;
 }
 
-.home, 
-.food, 
-.gardening, 
-.kid {
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
+
+/*** About Section ***/
+#about {
+    grid-area: about;
 }
 
 .about-me {
     display: flex;
     margin-bottom: 0;
+    justify-content: space-between;
 }
 
 .about-me-story {
-    padding-right: 3em;
+    width: 50%;
     height: auto;
+    margin-left: 2em;
+    text-align: center;
 }
 
 .about-me-img {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     border-radius: 50%;
     padding-top: 2em;
 }
@@ -223,9 +283,16 @@
         margin: auto;
     }
 
+    .trending,
     .main {
         display: flex;
         flex-direction: column;
+    }
+
+    .main-header,
+    .card-header,
+    .about-me-header {
+        width: 100%;
     }
 
     .main-topic,
@@ -254,26 +321,57 @@
     .trending-list {
         height: fit-content;
     }
+
+    /* Cards */
+    .card-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    /* About */
+    .about-me {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-story {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /* Media Query for Tablet Devices */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-    .wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.1fr 1.5fr 0.1fr 0.5fr 0.5fr 0.1fr 0.5fr;
-        grid-template-areas:
-        "main-header main-header"
-        "main main"
-        "card-header card-header" 
-        "home food"
-        "gardening kid"
-        "about-me-header about-me-header"
-        "about-me about-me";
+    .main {
+        display: flex;
+        flex-direction: column;
     }
 
-    .main {
-        grid-area: main;
+    .main-topic,
+    .whats-new {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .main-img-decription {
+        margin-bottom: 2.5em;
+    }
+
+    /* Card */
+    .card-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2em;
+        grid-template-areas: 
+        "home food"
+        "gardening kid";
     }
 
     .home {
@@ -292,26 +390,26 @@
         grid-area: kid;
     }
 
-    .about-me-header {
-        grid-area: about-me-header;
+    .card {
+        width: 100%;
+
     }
 
+    .card-description {
+        height: fit-content;
+        justify-content: space-between;
+    }
+
+    /* About Me */
     .about-me {
-        grid-area: about-me;
-    }
-
-    .main {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
-
-    .main-topic,
-    .whats-new {
-        width: 100%;
-        height: fit-content;
-    }
-
-    .main-img-decription {
-        margin-bottom: 2.5em;
+    
+    .about-me-story {
+        width: 95%;
+        margin: 0;
     }
 }
