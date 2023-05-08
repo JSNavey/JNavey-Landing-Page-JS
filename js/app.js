@@ -1,5 +1,4 @@
-/*
-Create navigation lists dynamically
+/* Create navigation lists dynamically
     - First declare navigation items array.
     - Select the first ul attribute (("ul")[0]) and set to navUl variable. 
       (Since ul doesn't have a class attribute yet, getElementsByTagName is used.)
@@ -22,7 +21,7 @@ for (let item of navItems) {
     //console.log(item);
     const li = document.createElement("li");
     //li.innerHTML = item;
-    li.innerHTML = `<a class="nav" href="#">${item}</a>`;
+    li.innerHTML = `<a class="nav ${item.toLowerCase()}" href="#${item.toLowerCase()}">${item}</a>`;
     navUl.appendChild(li);
 }
 
@@ -43,6 +42,10 @@ hamburger.addEventListener("click", () => {
 cross.addEventListener("click", () => {
     navLists.classList.remove("active");
 });
+
+/* Check if the sections is clearly viewed in the viewport. */
+const sections = document.querySelectorAll("section");
+console.log(sections);
 
 
 

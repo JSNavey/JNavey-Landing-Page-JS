@@ -4,59 +4,6 @@
 
 
 /*** Wrapper Section ***/
-/*
-.wrapper {
-    border: 1px solid red;
-    width: 75%;
-    margin: auto;
-    display: grid;
-    margin: auto;
-    padding-top: 5em;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 1fr 0.1fr 0.5fr 0.1fr 0.5fr;
-    grid-gap: 2em;
-    grid-template-areas: 
-    "main-header main-header main-header main-header"
-    "main main main main"
-    "card-header card-header card-header card-header"
-    "home food gardening kid"
-    "about-me-header about-me-header about-me-header about-me-header"
-    "about-me about-me about-me about-me";
-}
-
-.main-header {
-    grid-area: main-header;
-}
-
-.card-header {
-    grid-area: card-header;
-}
-
-.about-me-header {
-    grid-area: about-me-header;
-}
-
-.home {
-    grid-area: home;
-}
-
-.food {    
-    grid-area: food;
-}
-
-.gardening {
-    grid-area: gardening;
-}
-
-.kid {
-    grid-area: kid;
-}
-
-.about-me {
-    grid-area: about-me;
-}
-*/
-
 .wrapper {
     width: 75%;
     margin: auto;
@@ -407,7 +354,7 @@
         align-items: center;
         padding: 0;
     }
-    
+
     .about-me-story {
         width: 95%;
         margin: 0;
