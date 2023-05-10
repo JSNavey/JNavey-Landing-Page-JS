@@ -46,9 +46,9 @@ img {
     max-block-size: 100%;
 }
 
-input, textarea {
+/*input, textarea {
     -webkit-user-select: auto;
-}
+}*/
 
 textarea {
     white-space: revert;

@@ -4,7 +4,7 @@
       (Since ul doesn't have a class attribute yet, getElementsByTagName is used.)
     - Set "nav-lists" as class attribute.
     - Create an icon element for close menu in mobile screen, set a class attribute and append to ul.
-    - Use forLoop to create "li" and add navigation items with anchor tags by using innerHTML.
+    - Use forEach to create "li" and add navigation items with anchor tags by using innerHTML.
     - Add "li" to "ul" by using appendChild();
 */
 
@@ -16,11 +16,11 @@ const i = document.createElement("i");
 i.setAttribute("class", "fi fi-br-cross");
 navUl.append(i);
 
-for (let item of navItems) {
+navItems.forEach(item => {
     const li = document.createElement("li");
     li.innerHTML = `<a class="nav ${item.toLowerCase()}" href="#${item.toLowerCase()}">${item}</a>`;
     navUl.appendChild(li);
-}
+})
 
 /* Open and close nav bar in mobile size screen by using add and remove active class method.
     - Declare variables by using querySelector to select classes of target elements.
