@@ -224,6 +224,7 @@ transition: 0.5s;
 /* Media Query for Small Devices */ 
 @media screen and (max-width: 600px) {
     .header-wrapper {
+        position: relative;
         display: flex;
         height: 20em;
         width: 100vw;
