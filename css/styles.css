@@ -9,15 +9,15 @@
     margin: auto;
     display: grid;
     margin: 0 auto;
-    grid-template-rows: 1fr 0.5fr 0.75fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
     "trending"
-    "cards"
+    "posts"
     "about";
 }
 
 #trending,
-#cards,
+#posts,
 #about {
     margin-top: 2em;;
 }
@@ -109,8 +109,8 @@
 }
 
 /*** Cards ***/
-#cards {
-    grid-area: cards;
+#posts {
+    grid-area: posts;
     grid-template-rows: 0.1fr 0.5fr;
     grid-template-areas: 
     "card-header"

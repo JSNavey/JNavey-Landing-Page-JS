@@ -10,7 +10,6 @@
 
 let navItems = ["Home", "Trending", "Posts", "About"]; 
 const navUl = document.getElementsByTagName("ul")[0]; 
-//console.log(ul);
 navUl.setAttribute("class", "nav-lists");
 
 const i = document.createElement("i");
@@ -18,9 +17,7 @@ i.setAttribute("class", "fi fi-br-cross");
 navUl.append(i);
 
 for (let item of navItems) {
-    //console.log(item);
     const li = document.createElement("li");
-    //li.innerHTML = item;
     li.innerHTML = `<a class="nav ${item.toLowerCase()}" href="#${item.toLowerCase()}">${item}</a>`;
     navUl.appendChild(li);
 }
@@ -44,8 +41,49 @@ cross.addEventListener("click", () => {
 });
 
 /* Check if the sections is clearly viewed in the viewport. */
+
 const sections = document.querySelectorAll("section");
-console.log(sections);
+const navs = document.querySelectorAll(".nav");
+
+window.addEventListener("scroll", () => {
+    let isInViewport = "";
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (scrollY >= (sectionTop - sectionHeight / 3)) {
+            isInViewport = section.getAttribute("id");
+        }
+    });
+
+    navs.forEach(a => {
+        a.classList.remove("active");
+        if (a.classList.contains(isInViewport)) {
+            a.classList.add("active");
+        }
+    });
+});
+
+
+/* Scroll to Anchor 
+- Select all href elements in nav-lists class*/
+
+const anchorLi = document.querySelectorAll("ul li a[href^='#']");
+
+anchorLi.forEach(anchor => {
+    anchor.addEventListener("click", (e) => {
+
+        e.preventDefault();
+
+        const hash = anchor.getAttribute("href");
+        let sectionTarget = document.querySelector(hash);
+
+        sectionTarget.scrollIntoView({
+            behavior: "smooth",
+        });
+    });
+});
+
 
 
 
