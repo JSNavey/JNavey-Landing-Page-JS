@@ -7,9 +7,6 @@
 
 # Table of Contents
 
-- [Project Title](#project-title)
-- [Quickstart/Demo](#quickstartdemo)
-- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Development](#development)
