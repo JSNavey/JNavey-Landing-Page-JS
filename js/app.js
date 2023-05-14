@@ -40,7 +40,16 @@ cross.addEventListener("click", () => {
     navLists.classList.remove("active");
 });
 
-/* Check if the sections is clearly viewed in the viewport. */
+/* Check if the sections is clearly viewed in the viewport. "Active state" shown in that section once being viewed. 
+- Select all section and nav class in ul then declare them to variables respectively.
+- To check if the section is in the viewport, use scroll for addEventListener().
+- Set isInViewport variable as we want to store id of the section.
+- Use forEach to run each section, check top and height.
+- Use scrollY() to see if it's greater than the top of the section minus the amount of section height.
+  (I reduce the height by 30% for the better view.)
+- Get the id of section that being view and store it in "isInViewport" variable.
+- Use classList to add "active" class to the section. However, we need to remove "active" class if it's current active.
+*/
 
 const sections = document.querySelectorAll("section");
 const navs = document.querySelectorAll(".nav");
@@ -51,7 +60,7 @@ window.addEventListener("scroll", () => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
 
-        if (scrollY >= (sectionTop - sectionHeight / 3)) {
+        if (scrollY >= (sectionTop - (sectionHeight * 0.3))) {
             isInViewport = section.getAttribute("id");
         }
     });
@@ -66,17 +75,23 @@ window.addEventListener("scroll", () => {
 
 
 /* Scroll to Anchor 
-- Select all href elements in nav-lists class*/
+- Select all href elements in nav-lists class. 
+- Add click event to each anchor tag in nav menu.
+- Apply preventDefault() in order to prevent behavior of anchor tag as we need to implement scrollIntoView instead.
+- Declare the values of href in nav menu (return href="#...").
+- Select the section that match the href's value (return <section id="...></section>"). Declare to sectionTarget variable.
+- Implement scrollIntoView() method to sectionTarget in order to smoothly scroll to the selected section once click on the matched nav menu item.
+*/
 
-const anchorLi = document.querySelectorAll("ul li a[href^='#']");
+const navAnchorLi = document.querySelectorAll("ul li a[href^='#']");
 
-anchorLi.forEach(anchor => {
-    anchor.addEventListener("click", (e) => {
+navAnchorLi.forEach(aEl => {
+    aEl.addEventListener("click", (e) => {
 
         e.preventDefault();
 
-        const hash = anchor.getAttribute("href");
-        let sectionTarget = document.querySelector(hash);
+        const hash = aEl.getAttribute("href");
+        const sectionTarget = document.querySelector(hash);
 
         sectionTarget.scrollIntoView({
             behavior: "smooth",
