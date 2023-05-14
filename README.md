@@ -25,7 +25,7 @@ There is plenty of room for improvement. You are very welcome to clone the repo.
 3. Submit Pull Request with comprehensive explanation.
 
 # Development
-[![My Skills](https://skills.thijs.gg/icons?i=js,html,css)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=js,html,css,flaticon)](https://skills.thijs.gg)
 
 
 
