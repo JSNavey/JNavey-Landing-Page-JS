@@ -1,8 +1,8 @@
 # Landing Page Project  
 ![HTML](https://img.shields.io/badge/HTML-HTML5-orange)
 ![CSS](https://img.shields.io/badge/CSS-CSS3-blue)
-![Javascript lastest version](https://img.shields.io/badge/javascript-ECMAScript%202022-f0db4f)
-![Contribute](https://img.shields.io/badge/Contribute>-Welcome-ff69b4)
+![Javascript lastest version](https://img.shields.io/badge/Javascript-ECMAScript%202022-f0db4f)
+![Contribute](https://img.shields.io/badge/Contribute-Welcome-ff69b4)
 
 
 
