@@ -23,7 +23,8 @@ This project is built from HTML, CSS and Javascript languages.<br>
 
 # How to Contribute
 There is plenty of room for improvement. You are very welcome to clone the repo.  
-1. Clone the repo and create a new branch. `$ git checkout https://github.com/JSNavey/JNavey-Landing-Page-JS.git -b new_branch_name`
+1. Clone the repo and create a new branch.<br>
+`$ git checkout https://github.com/JSNavey/JNavey-Landing-Page-JS.git -b new_branch_name`
 2. Make changes or add new features and test.
 3. Submit Pull Request with comprehensive explanation.
 
