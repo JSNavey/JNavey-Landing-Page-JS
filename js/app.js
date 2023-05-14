@@ -98,9 +98,3 @@ navAnchorLi.forEach(aEl => {
         });
     });
 });
-
-
-
-
-
-

@@ -32,7 +32,7 @@ There is plenty of room for improvement. You are very welcome to clone the repo.
 3. Submit Pull Request with comprehensive explanation.
 
 # Resource Credits
-Images from [Unsplash](https://unsplash.com/).
+Images from [Unsplash](https://unsplash.com/).<br>
 Icons from [Flaticon](https://www.flaticon.com/).
 
 # License
