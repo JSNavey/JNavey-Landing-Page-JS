@@ -1,5 +1,6 @@
 # Landing Page Project  
-![Javascript lastest version](https://img.shields.io/badge/javascript-ECMAScript%202022-yellow)
+![Javascript lastest version](https://img.shields.io/badge/javascript-ECMAScript%202022-f0db4f)
+![Contribute](https://img.shields.io/badge/Contribute>-Welcome-ff69b4)
 
 
 
