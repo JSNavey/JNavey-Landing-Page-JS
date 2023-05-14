@@ -1,4 +1,6 @@
-# Project Title
+# Landing Page Project  
+
+
 
 # Quickstart/Demo
 
@@ -14,16 +16,17 @@
 - [License](#license)
 
 # Installation
-[(Back to top)](#table-of-contents)
+Installation is not required for this project.
 
-# Usage
-[(Back to top)](#table-of-contents)
+# How to Contribute
+There is plenty of room for improvement. You are very welcome to clone the repo.  
+1. Clone the repo and create a new branch. `$ git checkout ...`
+2. Make changes or add new features and test.
+3. Submit Pull Request with comprehensive explanation.
 
 # Development
 [(Back to top)](#table-of-contents)
 
-# Contribute
-[(Back to top)](#table-of-contents)
 
-# License
-[(Back to top)](#table-of-contents)
+
+
