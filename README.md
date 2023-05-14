@@ -20,7 +20,7 @@
 Installation is not required for this project.
 
 # Development
-This project is built from HTML, CSS and Javascript languages.
+This project is built from HTML, CSS and Javascript languages.<br>
 [![My Skills](https://skills.thijs.gg/icons?i=js,html,css)](https://skills.thijs.gg)
 
 # How to Contribute
