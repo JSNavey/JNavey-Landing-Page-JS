@@ -20,7 +20,7 @@ Installation is not required.
 # Usage
 As mentioned above, this project is based on the first project's struture. However, I modified some contents in order to fullfill the rubric requirement.
 
-###### 1. Built 4 content sections.
+#### 1. Built 4 content sections.
 There are Home, Trending, Posts and About sections. 
 
 # Development
