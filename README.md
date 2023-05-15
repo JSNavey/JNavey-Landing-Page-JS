@@ -4,9 +4,7 @@
 ![Javascript lastest version](https://img.shields.io/badge/Javascript-ECMAScript%202022-f0db4f)
 ![Contribute](https://img.shields.io/badge/Contribute-Welcome-ff69b4)
 
-
-
-# Quickstart/Demo
+This project is part of Front End Development - Bertelsmann Next Generation Tech Booster Scholarship from Udacity. It is the second project that is an extension work from the first one - [JNavey Personal Blog]( https://jsnavey.github.io/JNavey-Personal-Blog/) which focuses only on HTML and CSS. For this project, I implement the knowledge of DOM manipulation to add, remove and check elements in DOM.
 
 # Table of Contents
 
@@ -17,7 +15,10 @@
 - [License](#license)
 
 # Installation
-Installation is not required for this project.
+Installation is not required.
+
+# Usage
+
 
 # Development
 This project is built from HTML, CSS and Javascript languages.<br>
@@ -37,8 +38,5 @@ Icons from [Flaticon](https://www.flaticon.com/).
 
 # License
 No license.
-
-
-
 
 

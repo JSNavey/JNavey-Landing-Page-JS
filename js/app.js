@@ -73,7 +73,6 @@ window.addEventListener("scroll", () => {
     });
 });
 
-
 /* Scroll to Anchor 
     - Select all href elements in nav-lists class. 
     - Add click event to each anchor tag in nav menu.
