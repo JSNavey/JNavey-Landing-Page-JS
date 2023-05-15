@@ -26,6 +26,11 @@ There are Home, Trending, Posts and About sections. Home section has an empty na
 #### 2. Create the navigation menu dynamically and add into the empty ul.
 Implement `setAttibute()`, `createElement()`, `innerHTML`, `append()`, and `appendChild()`.
 
+#### 3. Add functionality to check if the specific section is being viewed in viewport. If the section is visible, add "Active State".
+1. Add `scroll` to `addEventListener()`.
+2. Use `forEach` to run each section and check top and height of it. 
+
+
 
 # Development
 This project is built from HTML, CSS and Javascript languages.<br>
