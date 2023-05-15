@@ -20,8 +20,12 @@ Installation is not required.
 # Usage
 As mentioned above, this project is based on the first project's struture. However, I modified some contents in order to fullfill the rubric requirement.
 
-#### 1. Built 4 content sections.
-There are Home, Trending, Posts and About sections. 
+#### 1. Built 4 content sections in HTML file.
+There are Home, Trending, Posts and About sections. Home section has an empty navigation menu (empty ul).
+
+#### 2. Create the navigation menu dynamically and add into the empty ul.
+Implement `setAttibute()`, `createElement()`, `innerHTML`, `append()`, and `appendChild()`.
+
 
 # Development
 This project is built from HTML, CSS and Javascript languages.<br>
