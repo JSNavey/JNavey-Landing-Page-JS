@@ -11,7 +11,8 @@ This project is part of Front End Development - Bertelsmann Next Generation Tech
 - [Installation](#installation)
 - [Usage](#usage)
 - [Development](#development)
-- [Contribute](#contribute)
+- [How to Contribute](#how-to-contribute)
+- [Resource Credits](#resource-credits)
 - [License](#license)
 
 # Installation
@@ -56,5 +57,3 @@ Icons from [Flaticon](https://www.flaticon.com/).
 
 # License
 No license.
-
-
