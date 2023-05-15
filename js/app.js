@@ -73,10 +73,10 @@ window.addEventListener("scroll", () => {
     });
 });
 
-/* Scroll to Anchor 
+/* Click on a navigation item, scroll smoothly to the appropriate section 
     - Select all href elements in nav-lists class. 
     - Add click event to each anchor tag in nav menu.
-    - Apply preventDefault() in order to prevent behavior of anchor tag as we need to implement scrollIntoView instead.
+    - Apply preventDefault() in order to prevent default behavior of href tag as we need to implement scrollIntoView instead.
     - Declare the values of href in nav menu (return href="#...").
     - Select the section that match the href's value (return <section id="...></section>"). Declare to sectionTarget variable.
     - Implement scrollIntoView() method to sectionTarget in order to smoothly scroll to the selected section once click on the matched nav menu item.

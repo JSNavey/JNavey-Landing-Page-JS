@@ -23,14 +23,20 @@ As mentioned above, this project is based on the first project's struture. Howev
 #### 1. Built 4 content sections in HTML file.
 There are Home, Trending, Posts and About sections. Home section has an empty navigation menu (empty ul).
 
-#### 2. Create the navigation menu dynamically and add into the empty ul.
-Implement `setAttibute()`, `createElement()`, `innerHTML`, `append()`, and `appendChild()`.
+#### 2. Create the navigation menu dynamically and add into an empty ul.
+Use `setAttibute()`, `createElement()`, `innerHTML`, `append()`, and `appendChild()`.
 
 #### 3. Add functionality to check if the specific section is being viewed in viewport. If the section is visible, add "Active State".
-1. Add `scroll` to `addEventListener()`.
+1. Add `scroll` event to `addEventListener()`.
 2. Use `forEach` to run each section and check top and height of it. 
+3. If visible, get "id" of that section by using `getAttribute("id")`.
+4. Use `classList` to add "active" class to the section that associated to that id.
 
+#### 4. Add functionality to scroll smoothly to appropriate section once click on a navigation item.
+Use `click` event to `addEventListener()` and `scrollIntoView()`. Apply `preventDefault()` in order to stop `href` default behavior.
 
+#### 5. Add functionality to open and close the navigation menu in mobile screen size in order open and close menu tab
+Use `classList.add("active)` and `classList.remove("active")`. 
 
 # Development
 This project is built from HTML, CSS and Javascript languages.<br>
