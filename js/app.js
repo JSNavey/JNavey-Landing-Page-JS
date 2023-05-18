@@ -44,34 +44,39 @@ cross.addEventListener("click", () => {
     - Select all section and nav class in ul then declare them to variables respectively.
     - To check if the section is in the viewport, use scroll for addEventListener().
     - Set isInViewport variable as we want to store id of the section.
-    - Use forEach to run each section, check top and height.
-    - Use scrollY() to see if it's greater than the top of the section minus the amount of section height.
-      (I reduce the height by 30% for the better view.)
-    - Get the id of section that being view and store it in "isInViewport" variable.
-    - Use classList to add "active" class to the section. However, we need to remove "active" class if it's current active.
+    - Use forEach to run through each section.
+    - Get the top px number of each section by using ".getBoundingClientRect().top" and store in topBorder variable.
+    - Check if the topBorder is at the top. I reduce the height by 40% for the better view.
+    - Get the id of section that being view and store it in "isInViewport" variable. This step is for adding active state to navigation menu.
+    - Use classList to add "active" class to the section. However, we need to remove "active" class if it's currently active.
 */
 
 const sections = document.querySelectorAll("section");
 const navs = document.querySelectorAll(".nav");
 
-window.addEventListener("scroll", () => {
+/* .getBoundingClientRect() */
+
+window.addEventListener("scroll", (e) => {
     let isInViewport = "";
     sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        if (scrollY >= (sectionTop - (sectionHeight * 0.3))) {
+        const topBorder = section.getBoundingClientRect().top;
+        if (topBorder > 0 && topBorder < window.innerHeight * 0.4) {
             isInViewport = section.getAttribute("id");
+            section.classList.add("active");
+        } else {
+            section.classList.remove("active");
         }
-    });
+    })
 
+    /* This is extra step to add active state to navigation menu as well. If the nav is active, underline will be shown. */
     navs.forEach(a => {
         a.classList.remove("active");
         if (a.classList.contains(isInViewport)) {
             a.classList.add("active");
         }
     });
-});
+})
+
 
 /* Click on a navigation item, scroll smoothly to the appropriate section 
     - Select all href elements in nav-lists class. 
