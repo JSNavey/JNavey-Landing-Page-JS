@@ -29,9 +29,9 @@ Use `setAttibute()`, `createElement()`, `innerHTML`, `append()`, and `appendChil
 
 #### 3. Add functionality to check if the specific section is being viewed in viewport. If the section is visible, add "Active State".
 1. Add `scroll` event to `addEventListener()`.
-2. Use `forEach` to run each section and check top and height of it. 
-3. If visible, get "id" of that section by using `getAttribute("id")`.
-4. Use `classList` to add "active" class to the section that associated to that id.
+2. Use `forEach` to run each section.
+3. Implement `.getBoundingClientRect()` to check top of each section. 
+4. If a section is visible in viewport, use `classList` to add "active" class and "remove" it otherwise.
 
 #### 4. Add functionality to scroll smoothly to appropriate section once click on a navigation item.
 Use `click` event to `addEventListener()` and `scrollIntoView()`. Apply `preventDefault()` in order to stop `href` default behavior.
